@@ -1,0 +1,23 @@
+meta {
+  name: IngresarEmpleados
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://127.0.0.1:8000/empleados
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "direccion": "Calle Principal 123",
+      "telefono": "1234567890",
+      "puesto": "Vendedor",
+      "codigo_farmacia": 1
+  }
+  
+}

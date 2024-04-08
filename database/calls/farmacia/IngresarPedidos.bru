@@ -1,0 +1,22 @@
+meta {
+  name: IngresarPedidos
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://127.0.0.1:8000/comprobantes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "cod_comprobante": "ABCD123",
+      "cliente_id": 1,
+      "precio_neto": 50.00,
+      "iva": 10.00,
+      "precio_total": 60.00
+  }
+  
+}

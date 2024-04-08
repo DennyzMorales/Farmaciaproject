@@ -1,0 +1,21 @@
+meta {
+  name: IngresarMedicamentos
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://127.0.0.1:8000/medicamentos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "Nombre": "Paracetamol",
+      "fecha_ven": "2024-12-31",
+      "marca": "Genérico",
+      "id_medicamento": "123"
+  }
+  
+}
